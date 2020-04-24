@@ -1,10 +1,10 @@
 .line{border: 1px solid red;}
 html{ scroll-behavior: smooth; height: 100%;}
-body{overflow-y: hidden; background: #f8f8f8; height: 100%;}
+body{ background: #f8f8f8; overflow: hidden; height: 100%;}
 span{font-family: 'Noto Sans KR', sans-serif;}
 
 /* menu */
-.menu_cont{position: fixed; width: 100vw; z-index: 20;}
+.menu_cont{position: fixed; width: 100%; z-index: 20;}
 .menu_cont .logo{display: block; position: absolute; left: 0; bottom: -7px; padding-left: 50px;}
 .menu_cont .logo > span{font-family: 'Noto Sans KR', sans-serif; font-size: 1.5rem; color: #6e6e6e; font-weight: bold;}
 .menu_cont .menu_wrap{width: 870px; min-width: 570px; height: 70px; margin: 0 auto; position: relative;}
@@ -17,16 +17,20 @@ span{font-family: 'Noto Sans KR', sans-serif;}
      transform: translateX(-50%); min-width: 760px; visibility: hidden; overflow: hidden; transition: height .2s;}
 .menu_cont .menu_wrap .menu_set > li.on > .dept2{visibility: visible;}
 .menu_cont .menu_wrap .menu_set > li > .dept2 > li{display: block; flex: 1;}
-.menu_cont .menu_wrap .menu_set > li > .dept2 > li > a{position: relative; text-align: center; padding: 15px 0;}
+.menu_cont .menu_wrap .menu_set > li > .dept2 > li > a{position: relative; text-align: center; padding: 15px 0; cursor: default;}
 .menu_cont .menu_wrap .menu_set > li > .dept2 > li > a > span{color: #292929; font-size: 0.93rem; font-weight: 500; letter-spacing: 3px;}
 .menu_cont .menu_wrap .menu_set > li > .dept2 > li > .dept3 > li > a{position: relative; padding: 5px 0; text-align: center;}
-.menu_cont .menu_wrap .menu_set > li > .dept2 > li > .dept3 > li > a > span{color: #808080; font-size: 0.87rem; font-weight: 500; letter-spacing: 3px;}
+.menu_cont .menu_wrap .menu_set > li > .dept2 > li > .dept3 > li > a > span{color: #808080; font-size: 0.87rem; font-weight: 500; letter-spacing: 3px; transition: all .3s;}
+.menu_cont .menu_wrap .menu_set > li > .dept2 > li > .dept3 > li > a > span:hover{border-bottom: 1px solid #292929; color: #292929;}
 .menu_cont .menu_wrap .menu_bg{width: 1150px; height: 91px; position: absolute; left: 50%; top: 0; z-index: -5;  background: #fefefb;
      border-radius: 0 0 20px 20px; transform: translateX(-50%); opacity: 0.9; min-width: 760px; transition: height .2s;}
 
+.menu_cont .menu_wrap .menu_set > li > a::before{content: '';display: block; visibility: hidden; position : absolute; top: 0; left: 50%; transform: translateX(-50%); width: 0; height: 90%; border-bottom: 3px solid #292929; transition: width .3s;}
+.menu_cont .menu_wrap .menu_set > li.on > a::before{width: 100%; visibility: visible;}
+
 /* main container */
-.main_cont{width: 100vw; height: 100%; min-height: 856px;}
-.main_cont .main_wrap{width: 3600px; height: 100%; position: relative; overflow-y: hidden;}
+.main_cont{width: 100%; height: 100%; overflow: auto;}
+.main_cont .main_wrap{width: 3600px; height: 100%; min-height: 856px; position: relative;}
 .main_cont .main_wrap::after{content: "";display: block; position: absolute; width: 3600px; height: 800px; background: url("../img/line_bg.png") no-repeat 0 0;
       background-size: cover; z-index: -5; background-position-y: -200px; bottom: 0px;}
 .main_cont .main_wrap .cont{position: absolute; height: 100%; bottom: 0;}
@@ -65,7 +69,7 @@ span{font-family: 'Noto Sans KR', sans-serif;}
 .main_cont .main_wrap .ser_tech_cont .left_cont > a > .ser_img1{width: 100%; height: 100%; background: url("../img/service_img1.png") no-repeat 0 0; background-size: cover; z-index: -5;}
 .main_cont .main_wrap .ser_tech_cont .left_cont > a > .ser_img2{position: absolute; height: 373px; width: 197px;
      background: url("../img/service_img2.png") no-repeat 0 0; background-size: cover; top: -33px; right: -92px;}
-.main_cont .main_wrap .ser_tech_cont .left_cont .txt_ser{display: block; position: absolute; bottom: -25px; left: 0; color: #292929; font-size: 0.75rem; 
+.main_cont .main_wrap .ser_tech_cont .left_cont .txt_ser{display: block; position: absolute; bottom: 60px; left: 0; color: #292929; font-size: 0.75rem; 
      opacity: 0.3; font-weight: 700;}
 .main_cont .main_wrap .ser_tech_cont .right_cont .right_wrap{position: absolute; bottom: 86px;}
 .main_cont .main_wrap .ser_tech_cont .right_cont .ser_txt_cont{padding: 0 0 160px 105px;}
