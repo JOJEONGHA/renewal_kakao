@@ -44,17 +44,24 @@ span{font-family: 'Noto Sans KR', sans-serif;}
 .main_cont .main_wrap .int_cont{width: 770px; left: 290px;}
 .main_cont .main_wrap .int_cont .int_wrap{position : absolute; bottom: 130px;}
 .main_cont .main_wrap .int_cont .int_wrap .btn{position: absolute; display: block; width: 70px; height: 70px; z-index: 20;}
+.main_cont .main_wrap .int_cont .int_wrap .btn:hover{}
 .main_cont .main_wrap .int_cont .int_wrap .btn.lbtn{left : 0px; top: -124px;}
-.main_cont .main_wrap .int_cont .int_wrap .btn.lbtn:hover{background: red;}
 .main_cont .main_wrap .int_cont .int_wrap .btn.rbtn{left: 697px; top: -566px;}
 .main_cont .main_wrap .int_cont .int_wrap > a{position: absolute; top: -566px;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap{position: absolute; transition: all .5s;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp0{width: 900px; height: 600px; top: 72px; left : -280px; opacity: 0; z-index: -5;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1{width: 768px; height: 512px; top: 0; left : 0; opacity: 1; z-index: 0;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1::after,
-.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1::before{content: ""; display: block; position: absolute; color: #000; z-index: 10;}
-.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1::after{right: 1px; top: 0; border-top: 35px solid red; border-bottom: 35px solid transparent; border-right: 35px solid red; border-left: 35px solid  transparent;}
-.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1::before{left: 0; bottom: 0; border-top: 35px solid transparent; border-bottom: 35px solid red; border-right: 35px solid transparent; border-left: 35px solid  red;}
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1::before{content: ""; display: block; position: absolute; color: #000; z-index: 10;  opacity: .6;}
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1::after,
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1::after{right: 0; top: 0; border-top: 35px solid #fff; border-bottom: 35px solid transparent; 
+     border-right: 35px solid #fff; border-left: 35px solid  transparent;}
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1::before{left: 0; bottom: 0; border-top: 35px solid transparent; border-bottom: 35px solid #fff;
+     border-right: 35px solid transparent; border-left: 35px solid  #fff;}
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1 .img_int::before,
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1 .img_int::after{display: block; position: absolute; color: #fff; opacity: .5; font-size: 1.5rem; font-weight: 600;}
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1 .img_int::before{content: "NEXT"; }
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1 .img_int::after{content: "PREV"; }
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp2{width: 442px; height: 295px; top: -72px; left: 524px; opacity: .5; z-index: -5;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp3{width: 340px; height: 227px; top: -130px; left: 700px; opacity: 0; z-index: -10;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.ty0 .img_int{background: url("../img/main_bg_ty1.png") no-repeat 0 0; background-size: contain;}
