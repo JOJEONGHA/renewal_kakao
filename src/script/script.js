@@ -52,9 +52,6 @@ function setT(ele,time){
     },time);
 }
 function view_ani(view_size){
-    console.log("st_mov >> ",st_mov);
-    console.log("sp_mov >> ",sp_mov);
-    console.log("p_mov >> ",p_mov);
     // view animation
     let ser_tech_view = $(".main_cont .main_wrap .ser_tech_cont"),
     soci_pri_view = $(".main_cont .main_wrap .soc_pri_cont"),
