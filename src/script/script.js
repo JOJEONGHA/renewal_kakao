@@ -49,11 +49,13 @@ function dialog_ani(){
         dialog_ani();
     },4300)
 }
+
 function setT(ele,time){
     window.setTimeout(function () { 
         ele.animate({ "opacity": 1}); 
     },time);
 }
+
 function view_ani(view_size){
     // view animation
     let ser_tech_view = $(".main_cont .main_wrap .ser_tech_cont"),

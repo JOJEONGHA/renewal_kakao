@@ -63,10 +63,10 @@ span{font-family: 'Noto Sans KR', sans-serif;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp1 .img_int::after{content: "PREV"; left: 11px; bottom: 34px; transform: rotate(-135deg); letter-spacing: 4px;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp2{width: 442px; height: 295px; top: -72px; left: 524px; opacity: .5; z-index: -5;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.dp3{width: 340px; height: 227px; top: -130px; left: 700px; opacity: 0; z-index: -10;}
-.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.ty0 .img_int{background: url("../img/main_bg_ty1.png") no-repeat 0 0; background-size: contain;}
-.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.ty1 .img_int{background: url("../img/main_bg_ty2.png") no-repeat 0 0; background-size: contain;}
-.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.ty2 .img_int{background: url("../img/main_bg_ty1.png") no-repeat 0 0; background-size: contain;}
-.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.ty3 .img_int{background: url("../img/main_bg_ty2.png") no-repeat 0 0; background-size: contain;}
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.ty0 .img_int{background: url("../img/main_bg_ty4.png") no-repeat 0 0; background-size: contain;}
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.ty1 .img_int{background: url("../img/main_bg_ty1.png") no-repeat 0 0; background-size: contain;}
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.ty2 .img_int{background: url("../img/main_bg_ty2.png") no-repeat 0 0; background-size: contain;}
+.main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap.ty3 .img_int{background: url("../img/main_bg_ty3.png") no-repeat 0 0; background-size: contain;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap .img_int{height: 100%;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .txt_wrap{position: absolute; width: 770px; top: 512px;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .txt_wrap .txt_tit{display: block; color : #292929; font-size: 1.5rem; font-weight: 600; padding: 17px 0; text-align: center;}

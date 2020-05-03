@@ -48,6 +48,6 @@ function mclc(index,ele,dir,amount){
     mtag.removeClass('on');
     setTimeout(function() {
         mtag.addClass('on');
-    },5);
+    },15);
 }
 
