@@ -10,7 +10,7 @@ $(function(){
     dialog_ani();
     view_ani(view_size);
     
-    $(".main_cont .main_wrap").on("mousewheel DOMMouseScroll",function(e){
+    $(".main_cont").on("mousewheel DOMMouseScroll",function(e){
         e.preventDefault();
         var delta = 0;
         if (!event) event = window.event;
@@ -26,7 +26,10 @@ $(function(){
         } else {
             $(".main_cont").stop().animate({scrollLeft: $(".main_cont").scrollLeft() - 50}, 0, "linear");
         }
+        view_ani(view_size); 
+    })
 
+    $(".main_cont").scroll(function(){
         view_ani(view_size); 
     })
 })

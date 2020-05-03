@@ -70,9 +70,8 @@ span{font-family: 'Noto Sans KR', sans-serif;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .img_wrap .img_int{height: 100%;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .txt_wrap{position: absolute; width: 770px; top: 512px;}
 .main_cont .main_wrap .int_cont .int_wrap > a > .txt_wrap .txt_tit{display: block; color : #292929; font-size: 1.5rem; font-weight: 600; padding: 17px 0; text-align: center;}
-.main_cont .main_wrap .int_cont .int_wrap > a > .txt_wrap .txt_tit.on{animation: mtxt_ani .8s;}
-@keyframes mtxt_ani{0%{transform: translateX(100px); opacity: 0;} 60%{transform: translateX(-5px);} 100%{transform: translateX(0); opacity: 1;}}
-@keyframes mtxt_ani2{0%{transform: translateX(100px); opacity: 0;} 60%{transform: translateX(-5px);} 100%{transform: translateX(0); opacity: 1;}}
+.main_cont .main_wrap .int_cont .int_wrap > a > .txt_wrap .txt_tit.on{animation: mtxt_ani 1s;}
+@keyframes mtxt_ani{0%{transform: translateX(120px); opacity: 0;} 60%{transform: translateX(-5px);} 100%{transform: translateX(0); opacity: 1;}}
 
 .main_cont .main_wrap .int_cont .stok_wrap {position: absolute; bottom: 176px; right: -140px;}
 .main_cont .main_wrap .int_cont .stok_wrap > h1{color: #292929; opacity: 0.3; font-size: 1.25rem;}
